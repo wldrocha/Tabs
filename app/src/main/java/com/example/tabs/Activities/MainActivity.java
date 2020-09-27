@@ -1,10 +1,12 @@
-package com.example.tabs;
+package com.example.tabs.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Toolbar;
+
+import com.example.tabs.R;
 
 public class MainActivity extends AppCompatActivity {
 
