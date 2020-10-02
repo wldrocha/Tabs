@@ -3,12 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Activities.MainActivity">
 
     <include android:id="@+id/myToolbar"
         layout="@layout/toolbar"
         />
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabTextColor="#fff"
+            android:layout_below="@id/myToolbar"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabLayout"
+            android:layout_marginTop="-4dp"
+            android:elevation="4dp"
+            android:minWidth="?attr/actionBarSize"
+            android:theme="@style/AppTheme" />
 
 
 </RelativeLayout>
